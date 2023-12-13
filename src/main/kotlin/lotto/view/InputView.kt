@@ -11,6 +11,7 @@ class InputView {
         }
 
         fun enterPrizeNumber(): List<Int> {
+            println()
             println("당첨 번호를 입력해 주세요.")
             val userInput = Console.readLine()
             val prizeNumbers = userInput.split(",")
@@ -18,6 +19,7 @@ class InputView {
         }
 
         fun enterBonusNumber(): Int {
+            println()
             println("보너스 번호를 입력해 주세요.")
             val bonusNumber = Console.readLine()
             return bonusNumber.toInt()
